@@ -1,32 +1,16 @@
-# 🌸 Iris Flower Classification API (Flask + Scikit-learn)
+# Iris Flower Classification API
 
-This project demonstrates how to train a machine learning model on the Iris dataset and deploy it using Flask as a simple REST API.
+A REST API to predict the Iris flower species using a trained RandomForest model.
 
----
-
-## ✅ Features
-
-- Trains a **Random Forest** classifier on the Iris dataset
-- Deploys the model using a **Flask API**
-- Accepts **JSON input** and returns the predicted flower species
-- Easy to test using **Postman** or **curl**
-
----
-
-## 🧠 Tech Stack
-
-- Python
-- Scikit-learn
-- Flask
-- Joblib
-- NumPy
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
+## Run Locally
 
 ```bash
-git clone https://github.com/your-username/iris_classifier_api.git
-cd iris_classifier_api
+pip install -r requirements.txt
+python app.py
+```
+
+## API Endpoint
+
+- POST `/predict`
+  - Input: JSON with features
+  - Output: Predicted class (0, 1, 2)
